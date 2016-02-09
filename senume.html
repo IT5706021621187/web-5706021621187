@@ -1,8 +1,11 @@
 <html>
-<head><title> รับชื่อ แล้วแสดง </title></head>
+<head><title> รับชื่อ แล้วแสดง </title>
+
+<meta charset="utf-8">
+</head>
 <body>
 <form method="GET" action="resume1.php">
-  <table border="1" align="center" width="500">
+  <table align="center" width="500">
   <tr>
     <td colspan="2" align="center">
       <big> ใส่ข้อมูลส่วนตัว </big>
@@ -13,32 +16,54 @@
           <tr>
             <tr>
               <tr>
-        <td> Enter Firstname : </td>
+                <tr>
+                  <tr>
+                    <tr>
+        <td> <b>Firstname : </b></td>
         <td><input type="text" name="firstname" size="30" value=""/> </td>
       </tr>
-      <td> Enter Lastname : </td>
+      <td> <b>Lastname :</b> </td>
       <td><input type="text" name="lastname" size="30" value=""/> </td>
     </tr>
-    <td> Enter Sex : </td>
-    <td align="left"><input type="radio" name="sex" size="30" value="Women"> Women
-      <input type="radio" name="sex" size="30" value="Man"> Man
+    <td> <b>Sex :</b> </td>
+    <td align="left"><input type="radio" name="sex" size="30" value="Women"> Male
+      <input type="radio" name="sex" size="30" value="Man"> Female
     </td>
   </tr>
-  <td> Enter Brithday : </td>
-  <td><input type="text" name="birthday" size="30" value=""/> </td>
-</tr>
-    <td> Enter Address : </td>
-    <td><input type="text" name="address" size="30" value=""/> </td>
+  <td> <b>Birthdate :</b> </td>
+       <td>
+         <input type="date" name="bday">
+       </td>
+       </tr>
+       <td> <b>Age : </b></td>
+        <td>
+          <input type="text" name="age" size="3" value=""/>
+        </td>
+      </tr>
+    <td> <b>Address : </b></td>
+    <td>   <textarea cols="40" rows="5" name="address"></textarea> </td>
   </tr>
-  <td> Enter Email : </td>
+  <td><b> Phone : </b></td>
+       <td>
+         <input type="text" name="phone" size="10" value=""/>
+       </td>
+     </tr>
+  <td><b>Email : </b></td>
   <td><input type="text" name="email" size="30" value=""/> </td>
     </tr>
+    <td> <b>Academy : </b></td>
+        <td>
+          <input type="text" name="nameschool" size="50" value=""/>
+        </td>
+        </tr>
     <tr>
           <td colspan="2" align="center">
             <input type="submit" value="  OK  " />
             <input type="reset" value="  Clear  " />
           </td>
+
     </tr>
+
   </table>
 </form>
 </body>
